@@ -75,4 +75,4 @@ test_predictions = rf_clf.predict_proba(X_test_scaled)[:, 1]
 submission_df = pd.DataFrame({'patient_id': test_df['patient_id'], 'prediction': test_predictions})
 
 # Save predictions to a CSV file
-submission_df.to_csv('student_Se22ucse010_predictions.csv', index=False)
+submission_df.to_csv('student_predictions.csv', index=False)
